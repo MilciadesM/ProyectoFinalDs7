@@ -1,0 +1,32 @@
+### LOGIN ADMIN
+POST http://localhost/api/admin/login
+Content-Type: application/json
+
+{
+    "mail":"admin.admin@gmail.com",
+    "password":"12345678"
+}
+
+### REGISTER ADMIN
+POST http://localhost/api/admin/register
+Content-Type: application/json
+
+{
+    "usuario":"YajaS",
+    "nombre":"Yajaira", 
+    "apellido":"Serrano", 
+    "telefono":"66448877", 
+    "mail":"admin2.admin@gmail.com",
+    "password":"12345678"
+}
+
+### GET ALL CLIENT
+GET http://localhost/api/admin/client
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzI2NDU1OTAsImV4cCI6MTczMjY0OTE5MCwiZGF0YSI6eyJpZCI6IjIwMjQxMTI1MDI1MDEyIiwidXNlciI6Ik1JTENJQURFU00iLCJ1c2VydHlwZSI6ImFkbWluIn19.25iDmikjmOMN14a0f9nnWOx9DbEO6xMFJlkKJp-6XrM
+
+### GET BY ID CLIENT
+GET http://localhost/api/admin/client/?id=20241126003044
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzI2NDU1OTAsImV4cCI6MTczMjY0OTE5MCwiZGF0YSI6eyJpZCI6IjIwMjQxMTI1MDI1MDEyIiwidXNlciI6Ik1JTENJQURFU00iLCJ1c2VydHlwZSI6ImFkbWluIn19.25iDmikjmOMN14a0f9nnWOx9DbEO6xMFJlkKJp-6XrM
+
+### GET IMG
+GET http://localhost/api/images/?name=001

@@ -1,0 +1,31 @@
+### LOGIN 
+POST http://localhost/api/client/login
+Content-Type: application/json
+
+{
+    "mail":"yajaira@gmail.com",
+    "password":"12345678"
+}
+
+### REGISTER
+POST http://localhost/api/client/register
+Content-Type: application/json
+
+{
+    "usuario":"YajairaS",
+    "nombre":"Yajaira", 
+    "apellido":"Serrano", 
+    "telefono":"66448877", 
+    "mail":"yajaira@gmail.com",
+    "password":"12345678"
+}
+
+###
+GET http://localhost/api/client/product
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzI2MzUzOTIsImV4cCI6MTczMjYzODk5MiwiZGF0YSI6eyJpZCI6IjIwMjQxMTI2MDk1MjE0IiwidXNlciI6IllhamFpcmFTIiwidXNlcnR5cGUiOiJjbGllbnQifX0.90mdAYtJKYorWhzq17ReZNjtVWc9XmXLQ7LRJ7a8ia0
+
+### GET ALL
+GET http://localhost/api/productos
+
+### GET IMG
+GET http://localhost/api/images/?name=001
